@@ -118,6 +118,7 @@
         <artifactId>tomcat7-maven-plugin</artifactId>
         <version>2.1</version>
         <configuration>
+            <server>tomcat-main</server>            
             <url>${server-url}</url>
             <path>${deploy-path}</path>
             <username>${deploy-un}</username>
