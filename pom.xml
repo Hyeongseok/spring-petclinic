@@ -113,6 +113,17 @@
   <build>
     <plugins>
       <plugin>
+        <groupId>org.apache.tomcat.maven</groupId>
+        <artifactId>tomcat7-maven-plugin</artifactId>
+        <version>2.1</version>
+        <configuration>
+            <url>${server-url}</url>
+            <path>${deploy-path}</path>
+            <username>${deploy-un}</username>
+            <password>${deploy-pw}</password>
+        </configuration>
+      </plugin>
+      <plugin>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
         <executions>
