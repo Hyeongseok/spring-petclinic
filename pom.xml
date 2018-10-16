@@ -116,13 +116,12 @@
       <plugin>
         <groupId>org.apache.tomcat.maven</groupId>
         <artifactId>tomcat7-maven-plugin</artifactId>
-        <version>2.1</version>
+        <version>2.2</version>
         <configuration>
+            <url>http://192.168.1.10:8888/manager/text</url>
             <server>tomcat-main</server>            
             <url>${server-url}</url>
-            <path>${deploy-path}</path>
-            <username>${deploy-un}</username>
-            <password>${deploy-pw}</password>
+            <path>/petclinic</path>
         </configuration>
       </plugin>
       <plugin>
